@@ -3,50 +3,50 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 240,
+      "count": 292,
       "max": [
-        2.2374894618988037,
-        0.92912602424621582,
-        4.0105457305908203
+        5.2242999076843262,
+        5.2242999076843262,
+        5.1560201644897461
       ],
       "min": [
-        1.6124894618988037,
-        -0.92912697792053223,
-        3.0812058448791504
+        -5.2242999076843262,
+        -5.2242999076843262,
+        -0.20810000598430634
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 2880,
+      "byteOffset": 3504,
       "componentType": 5126,
-      "count": 240,
+      "count": 292,
       "max": [
-        0.88882595300674438,
-        0.87456589937210083,
-        0.42719745635986328
+        0.64198344945907593,
+        0.63426917791366577,
+        1
       ],
       "min": [
-        0.4335041344165802,
-        -0.87456470727920532,
-        -0.21728053689002991
+        -0.64025944471359253,
+        -0.63452017307281494,
+        -0.9959368109703064
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 3,
       "componentType": 5126,
-      "count": 240,
+      "count": 292,
       "max": [
-        -0.45764663815498352,
-        0.88911724090576172,
-        0.19180060923099518,
+        1,
+        0.99991708993911743,
+        0.64275115728378296,
         1
       ],
       "min": [
-        -0.86176306009292603,
-        -0.88911724090576172,
-        -0.39591735601425171,
+        -0.99913430213928223,
+        -0.99999785423278809,
+        -0.19859328866004944,
         -1
       ],
       "type": "VEC4"
@@ -54,104 +54,23 @@
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 240,
+      "count": 292,
       "max": [
-        1.417140007019043,
-        -0.0080260001122951508
+        0.99611002206802368,
+        1.0448700189590454
       ],
       "min": [
-        1.0809299945831299,
-        -0.24185200035572052
+        0.0063499999232590199,
+        0.0059000002220273018
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 240,
+      "count": 438,
       "max": [
-        239
-      ],
-      "min": [
-        0
-      ],
-      "type": "SCALAR"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 5760,
-      "componentType": 5126,
-      "count": 4308,
-      "max": [
-        2.349179744720459,
-        1.5929491519927979,
-        4.4457950592041016
-      ],
-      "min": [
-        -2.5539352893829346,
-        -1.5929502248764038,
-        1.0145877382683466e-07
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "byteOffset": 57456,
-      "componentType": 5126,
-      "count": 4308,
-      "max": [
-        0.99386215209960938,
-        0.9999573826789856,
-        0.99842935800552368
-      ],
-      "min": [
-        -0.9996572732925415,
-        -0.99995815753936768,
-        -1.0000003576278687
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "byteOffset": 3840,
-      "componentType": 5126,
-      "count": 4308,
-      "max": [
-        0.99999535083770752,
-        0.99996840953826904,
-        0.97552740573883057,
-        1
-      ],
-      "min": [
-        -0.99992638826370239,
-        -0.99996840953826904,
-        -0.99500834941864014,
-        -1
-      ],
-      "type": "VEC4"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 1920,
-      "componentType": 5126,
-      "count": 4308,
-      "max": [
-        0.98947101831436157,
-        -0.010986000299453735
-      ],
-      "min": [
-        0.013031000271439552,
-        -0.98638898134231567
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 0,
-      "byteOffset": 960,
-      "componentType": 5125,
-      "count": 4356,
-      "max": [
-        4307
+        291
       ],
       "min": [
         0
@@ -161,169 +80,170 @@
     {
       "bufferView": 4,
       "componentType": 5126,
-      "count": 1,
+      "count": 140,
       "max": [
-        1,
+        5.8333301544189453
+      ],
+      "min": [
+        0.041669998317956924
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 140,
+      "max": [
         0,
         0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
+        0.99993997812271118,
         1
       ],
       "min": [
-        1,
         0,
         0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        1
+        -0.99993997812271118,
+        0.011300000362098217
       ],
-      "type": "MAT4"
+      "type": "VEC4"
+    }
+  ],
+  "animations": [
+    {
+      "channels": [
+        {
+          "sampler": 0,
+          "target": {
+            "node": 3,
+            "path": "rotation"
+          }
+        }
+      ],
+      "name": "CircleAction",
+      "samplers": [
+        {
+          "input": 5,
+          "interpolation": "LINEAR",
+          "output": 6
+        }
+      ]
     }
   ],
   "asset": {
     "extras": {
-      "author": "Kataphoric (https://sketchfab.com/Kataphoric)",
+      "author": "Noob Model :D (https://sketchfab.com/koontanch)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/models/18caed58804943d7a839dcbd44d21b80",
-      "title": "Squirtle"
+      "source": "https://sketchfab.com/3d-models/magic-ring-red-08b6d10747ae4319a5d6fb1c2a47be92",
+      "title": "Magic Ring - Red"
     },
-    "generator": "Sketchfab-3.18.7",
+    "generator": "Sketchfab-4.40.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 18384,
+      "byteLength": 1752,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 36384,
-      "byteOffset": 18384,
+      "byteLength": 2336,
+      "byteOffset": 1752,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 109152,
-      "byteOffset": 54768,
+      "byteLength": 7008,
+      "byteOffset": 4088,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 72768,
-      "byteOffset": 163920,
+      "byteLength": 4672,
+      "byteOffset": 11096,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 64,
-      "byteOffset": 236688,
-      "byteStride": 64,
+      "byteLength": 560,
+      "byteOffset": 15768,
+      "name": "floatBufferViews"
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2240,
+      "byteOffset": 16328,
+      "byteStride": 16,
       "name": "floatBufferViews"
     }
   ],
   "buffers": [
     {
-      "byteLength": 236752,
+      "byteLength": 18568,
       "uri": "scene.bin"
     }
   ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
   "extensionsUsed": [
-    "KHR_materials_unlit"
+    "KHR_materials_pbrSpecularGlossiness"
   ],
   "images": [
     {
-      "uri": "textures/ZenigameEyeDh.png_baseColor.png"
+      "uri": "textures/Material.001_diffuse.png"
     },
     {
-      "uri": "textures/ZenigameDh.png_baseColor.png"
+      "uri": "textures/Material.001_emissive.png"
     }
   ],
   "materials": [
     {
+      "alphaMode": "BLEND",
       "doubleSided": true,
       "emissiveFactor": [
         0,
         0,
         0
       ],
-      "extensions": {
-        "KHR_materials_unlit": {}
+      "emissiveTexture": {
+        "index": 1,
+        "texCoord": 0
       },
-      "name": "ZenigameEyeDh.png",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "baseColorTexture": {
-          "index": 0,
-          "texCoord": 0
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      }
-    },
-    {
-      "doubleSided": true,
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
       "extensions": {
-        "KHR_materials_unlit": {}
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 1,
+          "specularFactor": [
+            0.1053734756,
+            0.1053734756,
+            0.1053734756
+          ]
+        }
       },
-      "name": "ZenigameDh.png",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "baseColorTexture": {
-          "index": 1,
-          "texCoord": 0
-        },
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      }
+      "name": "Material.001"
     }
   ],
   "meshes": [
     {
+      "name": "Circle_0",
       "primitives": [
         {
           "attributes": {
@@ -334,21 +254,6 @@
           },
           "indices": 4,
           "material": 0,
-          "mode": 4
-        }
-      ]
-    },
-    {
-      "primitives": [
-        {
-          "attributes": {
-            "NORMAL": 6,
-            "POSITION": 5,
-            "TANGENT": 7,
-            "TEXCOORD_0": 8
-          },
-          "indices": 9,
-          "material": 1,
           "mode": 4
         }
       ]
@@ -371,68 +276,28 @@
       "children": [
         2
       ],
-      "matrix": [
-        0,
-        -1,
-        0,
-        0,
-        0,
-        0,
-        -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        -0.102375827729702,
-        -2.3252785205841064,
-        -2.2229025363922119,
-        1
-      ],
       "name": "RootNode (model correction matrix)"
     },
     {
       "children": [
         3
       ],
-      "matrix": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        -4.3711390063094768e-08,
-        0.999999999999999,
-        0,
-        0,
-        -0.999999999999999,
-        -4.3711390063094768e-08,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "Collada visual scene group"
+      "name": "Root"
     },
     {
       "children": [
-        4,
-        5,
-        6
+        4
       ],
-      "name": ""
-    },
-    {
-      "name": "_rootJoint"
+      "name": "Circle",
+      "translation": [
+        0,
+        0,
+        0.24167999625205994
+      ]
     },
     {
       "mesh": 0,
-      "name": ""
-    },
-    {
-      "mesh": 1,
-      "name": ""
+      "name": "Circle_0"
     }
   ],
   "samplers": [
@@ -450,15 +315,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "skins": [
-    {
-      "inverseBindMatrices": 10,
-      "joints": [
-        4
-      ],
-      "skeleton": 4
     }
   ],
   "textures": [
