@@ -4,11 +4,21 @@
 <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
 <script>
   var polyfill = new WebXRPolyfill();
+  // AFRAME.registerComponent('play-on-scan', {
+  //   init: function () {
+  //     var el = this.el;
+  //     el.addEventListener('markerscanned-or-something', function () {
+  //       el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+  //     });
+  //   }
+  // });
   AFRAME.registerComponent('play-on-scan', {
     init: function () {
       var el = this.el;
-      el.addEventListener('markerscanned-or-something', function () {
+      el.sceneEl.addEventListener('markerFound', function () {
+        // 
         el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+        el.emit('ar-ready');
       });
     }
   });
@@ -27,7 +37,7 @@
       <!-- <a-entity position="0 1 0" animation-mixer="clip: *;"
         gltf-model="src: url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf);">
       </a-entity> -->
-      <a-entity position="0.01 0.01 0.01" position='0 0 -1' rotation="-90 90 -90" 
+      <a-entity position="0.01 0.01 0.01" position='0 0 -1' rotation="-90 90 -90"
         gltf-model="url(assets/kirby_ginga/scene.gltf)" play-on-scan>
       </a-entity>
       <!-- <a-entity position="0.01 0.01 0.01" position='0 0 -1' rotation="-90 90 -90" 
