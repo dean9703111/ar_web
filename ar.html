@@ -10,19 +10,39 @@
   var polyfill = new WebXRPolyfill();
   // AFRAME.registerComponent('play-on-scan', {
   //   init: function () {
-  //     var el = this.el;
-  //     el.addEventListener('markerscanned-or-something', function () {
-  //       el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+  //     var data = this.data;  // Component property values.
+  //     var el = this.el;  // Reference to the component's entity.
+  //     el.sceneEl.addEventListener('markerFound', function () {
+  //       // 
+  //       console.log('markerFound:')
+  //       console.log(el)
+  //       if (el.id === 'toy') {
+  //         console.log('toy start')
+  //         el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+  //         el.emit('ar-ready');
+  //       }
   //     });
   //   }
   // });
-  AFRAME.registerComponent('play-on-scan', {
+  AFRAME.registerComponent('registerevents', {
     init: function () {
-      var el = this.el;
-      el.sceneEl.addEventListener('markerFound', function () {
-        // 
-        el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
-        el.emit('ar-ready');
+      var marker = this.el;
+      marker.addEventListener('markerFound', function () {
+        var markerId = marker.id;
+        console.log('markerFound', markerId);
+        // TODO: Add your own code here to react to the marker being found.
+        if (markerId === 'kirby_ginga') {
+          var test = document.getElementById("toy");
+          console.log('kirby_ginga start')
+          test.removeAttribute('animation-mixer')//讓影片能重來
+          test.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+          test.emit('ar-ready');
+        }
+      });
+      marker.addEventListener('markerLost', function () {
+        var markerId = marker.id;
+        console.log('markerLost', markerId);
+        // TODO: Add your own code here to react to the marker being lost.
       });
     }
   });
@@ -30,19 +50,20 @@
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-    <a-marker type='pattern' url='assets/pattern-baobao.patt'>
-      <a-entity scale="0.5 0.5 0.5" position='0 0 -1.5' rotation="0 0 0" gltf-model="url(assets/heart/2_hearts.glb)"></a-entity>
+    <a-marker id='2_hearts' type='pattern' url='assets/pattern-baobao.patt' registerevents>
+      <a-entity scale="0.5 0.5 0.5" position='0 0 -1.5' rotation="0 0 0" gltf-model="url(assets/heart/2_hearts.glb)">
+      </a-entity>
     </a-marker>
-    <a-marker type='pattern' url='assets/pattern-marker.patt'>
-      <a-entity scale="0.5 0.5 0.5" position='0 0 -1.5' rotation="0 0 0" gltf-model="url(assets/heart/9_hearts.glb)"></a-entity>
+    <a-marker id='9_hearts' type='pattern' url='assets/pattern-marker.patt' registerevents>
+      <a-entity scale="0.5 0.5 0.5" position='0 0 -1.5' rotation="0 0 0" gltf-model="url(assets/heart/9_hearts.glb)">
+      </a-entity>
     </a-marker>
-    <a-marker type='pattern' url='assets/pattern-people.patt'>
+    <a-marker id='kirby_ginga' type='pattern' url='assets/pattern-people.patt' registerevents>
       <!-- <a-entity animation-mixer="clip: *;" scale="0.01 0.01 0.01" position='0 0 0' rotation="90 0 0" gltf-model-next="src:url(assets/person/scene.gltf);"></a-entity> -->
       <!-- <a-entity position="0 1 0" animation-mixer="clip: *;"
         gltf-model="src: url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf);">
       </a-entity> -->
-      <a-entity position="0 0 -1.5" rotation="-90 90 -90"
-        gltf-model="url(assets/kirby_ginga/scene.gltf)" play-on-scan>
+      <a-entity id='toy' position="0 0 -1.5" rotation="-90 90 -90" gltf-model="url(assets/kirby_ginga/scene.gltf)">
       </a-entity>
       <!-- <a-entity position="0.01 0.01 0.01" position='0 0 -1' rotation="-90 90 -90" 
       animation-mixer="clip: *;loop:once;"
