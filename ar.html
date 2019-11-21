@@ -5,13 +5,13 @@
 <script>
   var polyfill = new WebXRPolyfill();
   AFRAME.registerComponent('play-on-scan', {
-  init: function () {
-    var el = this.el;
-    el.addEventListener('markerscanned-or-something', function () {
-      el.setAttribute('animation-mixer', {clip: '*', loop: 'once'});
-    });
-  }
-});
+    init: function () {
+      var el = this.el;
+      el.addEventListener('markerscanned-or-something', function () {
+        el.setAttribute('animation-mixer', { clip: '*', loop: 'once' });
+      });
+    }
+  });
 </script>
 
 <body style='margin : 0px; overflow: hidden;'>
@@ -24,10 +24,12 @@
     </a-marker>
     <a-marker type='pattern' url='assets/pattern-people.patt'>
       <!-- <a-entity animation-mixer="clip: *;" scale="0.01 0.01 0.01" position='0 0 0' rotation="90 0 0" gltf-model-next="src:url(assets/person/scene.gltf);"></a-entity> -->
-      <a-entity position="0 1 0"
-                animation-mixer="clip: *;"
-                gltf-model="src: url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf);">
-              </a-entity>
+      <!-- <a-entity position="0 1 0" animation-mixer="clip: *;"
+        gltf-model="src: url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/AnimatedMorphSphere/glTF/AnimatedMorphSphere.gltf);">
+      </a-entity> -->
+      <a-entity position="0.01 0.01 0.01" animation-mixer="clip: *;"
+        gltf-model="url(assets/kirby_ginga/scene.gltf)">
+      </a-entity>
       <!-- <model-viewer src="assets/person/scene.gltf" controls auto-rotate poster="assets/person/textures/palettemat_baseColor.png">
       </model-viewer> -->
     </a-marker>
