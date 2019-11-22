@@ -12,6 +12,9 @@ https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples
 ### 轉SVG工具(50K以下)
 https://www.onlinewebfonts.com/icon/tools
 
+### 轉SVG工具(這個比較猛)
+https://convertio.co/png-svg/
+
 ### a-entity 紀錄
 1. scale掌管大小，如果一開始沒看到可能是因為本體太大或是位置偏差可先調整如scale="0.1 0.1 0.1"
 
